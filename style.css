@@ -1,0 +1,824 @@
+
+   * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+   }
+
+   body {
+      font-family: "Lato", sans-serif;
+   }
+
+   .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #a8a5a5;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+   }
+
+   .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+   }
+
+   .sidenav h6 {
+      padding: 3px 3px 3px 32px;
+      color: #863F15;
+      font-size: 14px;
+      font-weight: 400;
+   }
+
+   .sidenav a:hover {
+      color: #5C8E61;
+   }
+
+   .data-category span {
+      font-size: 16px;
+      cursor: pointer;
+      padding-right: 140px
+   }
+
+   .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+   }
+
+   .main-kitchen {
+      width: 100%;
+   }
+
+   .inner-kitchen {
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      font-family: Arial;
+   }
+
+   .main-header {
+      width: 100%;
+   }
+
+   .inner-header {
+      width: 100%;
+   }
+
+   .mainbox-header {
+      width: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      padding: 15px 20px;
+   }
+
+   .box-header {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: relative;
+   }
+
+   .box-headericon {
+      width: 40%;
+   }
+
+   .data-category {
+      display: flex;
+      justify-content: center;
+      gap: 3px;
+      cursor: pointer;
+
+   }
+
+   .data-category-2 {
+      display: flex;
+      justify-content: center;
+      gap: 3px;
+      cursor: pointer;
+      position: relative;
+   }
+
+   .data-category:hover {
+      color: #5C8E61;
+   }
+
+   .data-category-2:hover {
+      color: #5C8E61;
+   }
+
+   span::before {
+      content: '';
+      height: 2px;
+      background: green;
+      display: block;
+      position: relative;
+      top: 27px;
+      width: 0;
+      transition: width 0.3s ease;
+   }
+
+   span:hover::before {
+      width: 100%;
+   }
+
+   .mainbox-header h2::before {
+      content: '';
+      height: 2px;
+      background: green;
+      display: block;
+      position: relative;
+      top: 27px;
+      width: 0;
+      transition: width 0.3s ease;
+   }
+
+   .mainbox-header h2:hover::before {
+      width: 100%;
+   }
+
+   .data-category h2 {
+      font-size: 15px;
+      font-weight: 400;
+   }
+
+   .data-category-2 h2 {
+      font-size: 15px;
+      font-weight: 400;
+   }
+
+   .icon-category {
+      width: 17%;
+   }
+
+   .icon-category ion-icon {
+      font-size: 20px;
+   }
+
+   .box-headericon {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+   }
+
+   .data-headericon {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+   }
+
+   .data-home {}
+
+   .icon-header ion-icon {
+      color: gray;
+      font-size: 30px;
+   }
+
+   .icon-home {
+      display: flex;
+      cursor: pointer;
+
+   }
+
+   .icon-home h2 {
+      font-size: 15px;
+      font-weight: 400;
+   }
+
+   .icon-home:hover {
+      color: #5C8E61;
+   }
+
+   .data-home h6 {
+      font-weight: 400;
+      font-size: 9px;
+      color: gray;
+   }
+
+   .out {
+      width: 100%;
+      padding: 10px 10px;
+      background-color: white;
+      opacity: 0;
+      position: absolute;
+      top: 30px;
+   }
+
+   .out h3 {
+      font-size: 16px;
+      padding-top: 12px;
+      padding-bottom: 7px;
+      font-weight: 400;
+   }
+
+   .out h4 {
+      font-size: 16px;
+      padding-top: 3px;
+      padding-bottom: 5px;
+      font-weight: 400;
+   }
+
+   .out h3:hover {
+      color: #5C8E61;
+   }
+
+   .out h4:hover {
+      color: #5C8E61;
+   }
+
+   .data-category-2:hover .out {
+      opacity: 1;
+      color: black;
+   }
+
+   .sale {
+      width: 100%;
+      height: 430px;
+      background-image: url(/assets/hero2.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   .data-sale {
+      padding-top: 70px;
+
+   }
+
+   .data-sale p {
+      color: gray;
+      padding-left: 40px;
+      padding-bottom: 20px;
+   }
+
+   .data-sale h1 {
+      font-size: 60px;
+      font-weight: 400;
+      padding-left: 40px;
+      padding-bottom: 20px;
+   }
+
+   .data-sale a {
+      text-decoration: none;
+      margin-left: 40px;
+      border: 1px solid black;
+      color: white;
+      background-color: black;
+      padding: 9px 20px;
+      border-radius: 58px;
+   }
+
+   .data-sale a:hover {
+      background-color: #5C8E61;
+      color: black;
+      border: 1px solid #5C8E61;
+   }
+
+   .main-shop {
+      width: 100%;
+   }
+
+   .main-boxshop {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+
+   }
+
+   .head-shop h3 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 28px;
+      padding-top: 25px;
+   }
+
+   .box-shop {
+      width: 16%;
+
+   }
+
+   .image-shop {
+      width: 100%;
+      cursor: pointer;
+   }
+
+   .image-shop img {
+      width: 100%;
+   }
+
+   .data-shop h5 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+   }
+
+   .main-boxfine {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 13px;
+      padding: 13px;
+      margin-top: 35px;
+   }
+
+   .box-fine {
+      width: 30%;
+      border-radius: 20px;
+   }
+
+   .image-fine {
+      width: 100%;
+   }
+
+   .image-fine img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 8px 8px 0px 0px;
+   }
+
+   .data-fine-1 {
+      text-align: center;
+      border: 1px solid #EBE0C9;
+      padding: 30px;
+      background-color: #EBE0C9;
+      border-radius: 0px 0px 8px 8px;
+   }
+
+   .data-fine-1 h6 {
+      font-weight: 400;
+      font-size: 14px;
+
+   }
+
+   .data-fine-1 h1 {
+      font-weight: 400;
+      padding-top: 10px;
+      padding-bottom: 20px;
+   }
+
+   .data-fine-1 a {
+      text-decoration: none;
+      border: 1px solid black;
+      background-color: black;
+      color: white;
+      padding: 8px 25px;
+      border-radius: 25px;
+      margin-bottom: 10px;
+
+   }
+
+   .data-fine-2 {
+      text-align: center;
+      border: 1px solid #CFDED3;
+      padding: 30px;
+      background-color: #CFDED3;
+      border-radius: 0px 0px 8px 8px;
+   }
+
+   .data-fine-2 h6 {
+      font-weight: 400;
+      font-size: 14px;
+
+   }
+
+   .data-fine-2 h1 {
+      font-weight: 400;
+      padding-top: 10px;
+      padding-bottom: 20px;
+   }
+
+   .data-fine-2 a {
+      text-decoration: none;
+      border: 1px solid black;
+      background-color: black;
+      color: white;
+      padding: 8px 25px;
+      border-radius: 25px;
+      margin-bottom: 10px;
+
+   }
+
+   .data-fine-3 {
+      text-align: center;
+      border: 1px solid #CDDCE4;
+      padding: 30px;
+      background-color: #CDDCE4;
+      border-radius: 0px 0px 8px 8px;
+   }
+
+   .data-fine-3 h6 {
+      font-weight: 400;
+      font-size: 14px;
+
+   }
+
+   .data-fine-3 h1 {
+      font-weight: 400;
+      padding-top: 10px;
+      padding-bottom: 20px;
+   }
+
+   .data-fine-3 a {
+      text-decoration: none;
+      border: 1px solid black;
+      background-color: black;
+      color: white;
+      padding: 8px 25px;
+      border-radius: 25px;
+      margin-bottom: 10px;
+
+   }
+
+   .data-fine-1 a:hover {
+      color: black;
+      background-color: #5C8E61;
+      border: 1px solid #5C8E61;
+   }
+
+   .data-fine-2 a:hover {
+      color: black;
+      background-color: #5C8E61;
+      border: 1px solid #5C8E61;
+   }
+
+   .data-fine-3 a:hover {
+      color: black;
+      background-color: #5C8E61;
+      border: 1px solid #5C8E61;
+   }
+
+   .main-food {
+      width: 100%;
+      text-align: center;
+
+   }
+
+   .food {
+      width: 100%;
+      height: 400px;
+      background-image: url(/assets/hero_new_3.webp);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-content: center;
+
+   }
+
+   .food p {
+      color: gray;
+      font-size: 17px;
+      padding-bottom: 15px;
+   }
+
+   .food h1 {
+      font-weight: 400;
+      font-size: 45px;
+      padding-bottom: 40px;
+   }
+
+   .food a {
+      text-decoration: none;
+      border: 1px solid black;
+      background-color: black;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 25px;
+   }
+
+   .food a:hover {
+      background-color: #5C8E61;
+      color: black;
+      border: 1px solid#5C8E61;
+   }
+
+   @media only screen and (max-width:767px) {
+      .data-category h2 {
+         font-size: 12px;
+         font-weight: 400;
+      }
+
+      .data-category-2 h2 {
+         font-size: 12px;
+         font-weight: 400;
+      }
+
+      .icon-category {
+         width: 10%;
+      }
+
+      .icon-category ion-icon {
+         font-size: 20px;
+      }
+
+      .icon-header ion-icon {
+         color: gray;
+         font-size: 20px;
+      }
+
+      .icon-home {
+         display: flex;
+         cursor: pointer;
+
+      }
+
+      .icon-home h2 {
+         font-size: 12px;
+         font-weight: 400;
+      }
+
+      .icon-home:hover {
+         color: green;
+      }
+
+      .data-home h6 {
+         font-weight: 400;
+         font-size: 12px;
+         color: gray;
+      }
+
+      .out {
+         width: 100%;
+         padding: 10px 10px;
+         background-color: white;
+         opacity: 0;
+         position: absolute;
+         top: 30px;
+      }
+
+      .out h3 {
+         font-size: 12px;
+         padding-top: 7px;
+         padding-bottom: 7px;
+         font-weight: 400;
+      }
+
+      .out h4 {
+         font-size: 12px;
+         padding-top: 3px;
+         padding-bottom: 10px;
+         font-weight: 400;
+      }
+
+      .box-header {
+         width: 60%;
+         display: flex;
+         justify-content: center;
+         gap: 10px;
+         position: relative;
+      }
+
+      .sale {
+         width: 100%;
+         height: 350px;
+         background-image: url(/assets/hero2.jpg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+
+      .data-sale p {
+         color: gray;
+         padding-left: 30px;
+         padding-bottom: 10px;
+      }
+
+      .data-sale h1 {
+         font-size: 45px;
+         font-weight: 400;
+         padding-left: 30px;
+         padding-bottom: 20px;
+      }
+
+      .data-sale a {
+         text-decoration: none;
+         margin-left: 30px;
+         border: 1px solid black;
+         color: white;
+         background-color: black;
+         padding: 7px 15px;
+         border-radius: 58px;
+      }
+
+      .main-boxshop {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 10px;
+         padding: 10px;
+
+      }
+
+      .box-shop {
+         width: 32%;
+      }
+
+      .main-boxfine {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 13px;
+         padding: 13px;
+         margin-top: 35px;
+      }
+
+      .box-fine {
+         width: 45%;
+         border-radius: 20px;
+      }
+
+      .sidenav {
+         padding-top: 20px;
+      }
+
+      .sidenav a {
+         font-size: 23px;
+      }
+
+      .data-category span {
+         font-size: 16px;
+         cursor: pointer;
+         padding-right: 60px
+      }
+
+   }
+
+   @media only screen and (max-width:510px) {
+      .mainbox-header {
+         width: 100%;
+         background-color: white;
+         display: flex;
+         justify-content: center;
+         padding: 25px;
+      }
+
+      .box-header {
+         width: 60%;
+         display: flex;
+         justify-content: center;
+         gap: 5px;
+         position: relative;
+      }
+
+      .box-headericon {
+         width: 40%;
+      }
+
+      .data-category h2 {
+         font-size: 8px;
+         font-weight: 400;
+      }
+
+      .data-category-2 h2 {
+         font-size: 8px;
+         font-weight: 400;
+      }
+
+      .icon-category {
+         width: 6%;
+
+      }
+
+      .icon-category ion-icon {
+         font-size: 9px;
+      }
+
+      .icon-header ion-icon {
+         color: gray;
+         font-size: 13px;
+      }
+
+      .icon-home {
+         display: flex;
+         cursor: pointer;
+      }
+
+      .icon-home h2 {
+         font-size: 8px;
+         font-weight: 400;
+      }
+
+      .icon-home:hover {
+         color: green;
+      }
+
+      .data-home h6 {
+         font-weight: 400;
+         font-size: 7px;
+         color: gray;
+      }
+
+      .out {
+         width: 100%;
+         padding: 0px 0px;
+         background-color: white;
+         opacity: 0;
+         position: absolute;
+         top: 30px;
+      }
+
+      .out h3 {
+         font-size: 7px;
+         padding-bottom: 3px;
+         font-weight: 400;
+      }
+
+      .out h4 {
+         font-size: 7px;
+         padding-top: 3px;
+         padding-bottom: 3px;
+         font-weight: 400;
+      }
+
+      .sale {
+         width: 100%;
+         height: 330px;
+         background-image: url(/assets/hero2.jpg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+
+      .data-sale p {
+         color: gray;
+         padding-left: 20px;
+         padding-bottom: 10px;
+      }
+
+      .data-sale h1 {
+         font-size: 40px;
+         font-weight: 400;
+         padding-left: 20px;
+         padding-bottom: 20px;
+      }
+
+      .data-sale a {
+         text-decoration: none;
+         margin-left: 20px;
+         border: 1px solid black;
+         color: white;
+         background-color: black;
+         padding: 6px 14px;
+         border-radius: 58px;
+      }
+
+      .main-boxshop {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 10px;
+         padding: 10px;
+
+      }
+
+      .box-shop {
+         width: 32%;
+
+      }
+
+      .main-boxfine {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 13px;
+         padding: 13px;
+         margin-top: 35px;
+      }
+
+      .box-fine {
+         width: 99%;
+         border-radius: 20px;
+      }
+
+      .sidenav {
+         padding-top: 15px;
+      }
+
+      .sidenav a {
+         font-size: 18px;
+      }
+
+      .data-category span {
+         font-size: 7px;
+         cursor: pointer;
+         padding-right: 0px
+      }
+   }
